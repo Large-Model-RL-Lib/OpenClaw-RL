@@ -47,7 +47,7 @@ pip install --no-build-isolation "transformer_engine[pytorch,core_cu12]==2.10.0"
 apt-get update
 apt-get install -y python3-apt
 
-# upgrade to support Qwen3.5
+# upgrade to support Qwen3.5, but keep 4.57.1 if using Qwen3
 pip install transformers==5.3.0
 ```
 
