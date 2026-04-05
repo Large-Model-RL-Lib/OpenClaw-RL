@@ -15,8 +15,11 @@ pip install \
  
 pip install -r requirements.txt
 
-# DeepEP: https://github.com/deepseek-ai/DeepEP download first
-pip install -e /path_to/DeepEP --no-build-isolation
+# DeepEP
+git clone https://github.com/deepseek-ai/DeepEP.git
+cd DeepEP
+pip install -e . --no-build-isolation
+cd ..
 
 pip install -e slime/slime/backends/megatron_utils/kernels/int4_qat --no-build-isolation
  
